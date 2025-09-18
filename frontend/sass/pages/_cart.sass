@@ -1,0 +1,142 @@
+.cart
+    &__list
+        display: flex
+        width: 100%
+        padding: 1rem 1rem
+        margin: 0rem
+        li
+            display: flex
+            justify-content: center
+            align-items: center
+    &__name
+        flex: 1 0 25%
+        justify-content: start !important
+    &__quanty
+        flex: 1 0 20%
+    &__item
+        flex:1
+    &__header
+        border-bottom: 2px solid #ccc
+        margin: 1rem 0rem
+        li
+            font-size:1.5rem
+            font-weight: 600
+    &__product
+        &__Info
+            display: flex
+            gap:1rem
+            img
+                width: 6rem
+                height: 6rem
+                object-fit: cover
+        &__des
+            display: flex
+            flex-direction: column
+            gap: 1rem
+            h3
+                font-size: 1.6rem
+                font-weight: 600
+            p
+                font-size: 1rem
+                color: #ccc
+    &__update--count
+        background: #fff
+    &__input
+        border: none
+        text-align: center
+        padding: 0.5rem 1rem
+        width: 4rem
+    &__clear
+        color: red
+        background: #fff
+    &__button
+        display: flex
+        justify-content: space-between
+        margin-top: 2rem 
+    &__buy
+        background-color: green
+        padding: 0.5rem 1rem
+        color: #fff
+        border-radius: 10px
+        font-size: 1.2rem
+    &__total
+        display: flex
+        justify-content: end
+        p
+            font-size: 1.5rem
+    &__no
+        max-width: 800px
+        margin: 0rem auto
+        aspect-ratio: 16/12
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+.modal
+    &__buy
+        background-color: #fff
+        border-radius: 10px
+        padding: 2rem
+        width: 60rem 
+    &__buy--header
+        display: flex
+        justify-content: space-between
+        padding-bottom: 1rem
+        position: relative
+        &::after
+            content:""
+            width: 64rem
+            position: absolute
+            bottom:0
+            left: -2rem
+            background-color: #ccc
+            height: 1px
+.form
+    &__buy
+        display: flex
+        flex-direction: column
+        gap:1rem
+        margin-top:1rem
+        input,
+        select,
+        textarea,
+        option
+            flex: 1
+            list-style: none
+            padding: 1rem 1rem
+            border-radius: 10px
+            border: 2px solid #ccc
+            appearance: none
+        textarea
+            height: 6rem
+        select
+            padding-left:1rem
+            font-size: 1.25rem  
+    &__item
+        span
+            color: red
+    &__input-box
+        width: 100%
+        display: flex
+        gap:2rem
+    &__adress
+        margin-top:1rem 
+        width: calc( 100% - 2rem )
+    &__select-box
+        position: relative
+        flex: 1
+        display: flex
+        opacity: 0
+        pointer-events: none
+        &.active
+            opacity: 1
+            pointer-events: auto
+    &__select-icon
+        position: absolute
+        top:35%
+        right: 1rem
+    &__btn
+        width: 100%
+        display: flex
+        justify-content: end
+        gap: 1rem
